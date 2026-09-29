@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="it" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>(function(){var r=document.documentElement;r.classList.remove('no-js');
+/* la firma: finché main.js non parte le lampadine restano su, spente, col locale al buio; se il codice non arriva, dopo 2,5 s sono accese (stato finale) */
+try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){r.classList.add('firma-attesa');window.__attesaLampade=setTimeout(function(){r.classList.remove('firma-attesa')},2500)}}catch(e){}})()</script>
+<title>L'Antico Forno — panificio e caffè, Via Ettore Ponti 33, Milano</title>
+<meta name="description" content="L'Antico Forno, Via Ettore Ponti 33 a Milano (Barona): panificio con caffetteria. Il pane (anche a lievito madre), la focaccia, le pizze, le brioche e il caffè al banco. Dal lunedì al venerdì 7–19:30, il sabato 6–14. Google 4,5 su 104. Tel. 334 325 7418.">
+<link rel="canonical" href="https://rotenzark.github.io/antico-forno-barona/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="L'Antico Forno — caffè, pane &amp; dolci in Via Ettore Ponti">
+<meta property="og:description" content="Panificio con caffetteria alla Barona: il pane, la focaccia, le pizze, le brioche; la colazione sulla mensola sotto la scala.">
+<meta property="og:image" content="https://rotenzark.github.io/antico-forno-barona/img/og.jpg">
+<meta property="og:url" content="https://rotenzark.github.io/antico-forno-barona/">
+<meta property="og:locale" content="it_IT">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#1E1D1B">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500;600;700&amp;family=Spline+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css?v=1">
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+<script src="js/main.js?v=1" defer></script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Bakery","name":"L'Antico Forno","description":"Panificio con caffetteria in Via Ettore Ponti 33 a Milano: pane, focaccia, pizze, brioche e dolci, la colazione al banco.","url":"https://rotenzark.github.io/antico-forno-barona/","image":"https://rotenzark.github.io/antico-forno-barona/img/og.jpg","telephone":"+39 334 325 7418","address":{"@type":"PostalAddress","streetAddress":"Via Ettore Ponti 33","postalCode":"20143","addressLocality":"Milano","addressRegion":"MI","addressCountry":"IT"},"geo":{"@type":"GeoCoordinates","latitude":45.44212,"longitude":9.15517},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"07:00","closes":"19:30"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"06:00","closes":"14:00"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.5","reviewCount":"104","bestRating":"5"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"A che ora aprite?","acceptedAnswer":{"@type":"Answer","text":"Dal lunedì al venerdì dalle 7 alle 19:30, il sabato dalle 6 alle 14. La domenica è chiuso."}},
+{"@type":"Question","name":"Si può fare colazione lì?","acceptedAnswer":{"@type":"Answer","text":"Sì: caffè, cappuccino e brioche al banco, o sugli sgabelli della mensola sotto la scala."}},
+{"@type":"Question","name":"Che pane fate?","acceptedAnswer":{"@type":"Answer","text":"Sulla loro lavagna: lievito madre, francesini, bocconcini, pasta dura, pane all'olio, integrale, 5 cereali, pan focaccia, pane alla curcuma, siciliano. Chiedete al banco cosa c'è oggi."}},
+{"@type":"Question","name":"Si possono ordinare vassoi per una festa?","acceptedAnswer":{"@type":"Answer","text":"Un cliente racconta di aver prenotato vassoi di focaccia e brioche per il suo compleanno: chiamate il 334 325 7418 per mettervi d'accordo."}},
+{"@type":"Question","name":"Come si arriva?","acceptedAnswer":{"@type":"Answer","text":"Via Ettore Ponti 33, alla Barona: il bus 74 ferma in Via Binda, angolo Via Ettore Ponti, a circa 50 metri; il 47 in Piazza Bilbao, a circa 90. Il tram 2 passa in Via Lodovico il Moro, a circa 600 metri; la M2 Romolo è a circa un chilometro."}}
+]}
+</script>
+</head>
+<body>
+
+<a class="salta" href="#contenuto" data-i18n="m.salta">Vai al contenuto</a>
+
+<header class="testata" id="testata">
+  <div class="testata__dentro">
+    <a class="marchio" href="#inizio" aria-label="L'Antico Forno: torna all'inizio" data-i18n-aria="m.top">
+      <span class="marchio__nome" aria-hidden="true">L'Antico Forno</span>
+    </a>
+    <nav id="mainNav" class="voci" aria-label="Le sezioni" data-i18n-aria="m.nav">
+      <a href="#mensola" data-i18n="n.mensola">Sotto la scala</a>
+      <a href="#lavagne" data-i18n="n.lavagne">Le lavagne</a>
+      <a href="#negozio" data-i18n="n.negozio">Il negozio</a>
+      <a href="#dicono" data-i18n="n.dicono">Dicono</a>
+      <a href="#orari" data-i18n="n.orari">Orari e dove</a>
+    </nav>
+    <div class="testata__azioni">
+      <div class="lingue" role="group" aria-label="Lingua" data-i18n-aria="m.lingua">
+        <button type="button" data-lang="it" aria-pressed="true">IT</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <a class="chiama" href="tel:+393343257418"><span data-i18n="t.chiama">Chiama</span></a>
+      <button id="burger" class="burger" type="button" aria-expanded="false" aria-controls="menuMobile" aria-label="Apri il menu" data-i18n-aria="m.menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<nav id="menuMobile" class="menu-mobile" hidden aria-label="Le sezioni" data-i18n-aria="m.nav">
+  <a href="#mensola" data-i18n="n.mensola">Sotto la scala</a>
+  <a href="#lavagne" data-i18n="n.lavagne">Le lavagne</a>
+  <a href="#negozio" data-i18n="n.negozio">Il negozio</a>
+  <a href="#dicono" data-i18n="n.dicono">Dicono</a>
+  <a href="#orari" data-i18n="n.orari">Orari e dove</a>
+  <a href="#domande" data-i18n="n.domande">Domande</a>
+  <a class="menu-mobile__tel" href="tel:+393343257418"><span data-i18n="t.chiama">Chiama</span> <span class="intero">334 325 7418</span></a>
+</nav>
+
+<main id="contenuto">
+
+  <!-- ══════ IL MURO GRIGIO: il loro logo ══════ -->
+  <section id="inizio" class="apertura" aria-labelledby="titolo">
+    <div class="apertura__testo">
+      <p class="apertura__sopra" data-i18n="h.sopra">Panificio · caffetteria · Via Ettore Ponti 33, Milano</p>
+      <h1 id="titolo" class="logo-muro">
+        <span class="logo-muro__nome">L'Antico Forno</span>
+        <span class="logo-muro__caffe">Caffè</span>
+        <svg class="logo-muro__tazza" viewBox="0 0 64 60" aria-hidden="true" focusable="false"><path d="M22 14 C 16 8, 30 6, 26 0 M36 14 C 30 8, 44 6, 40 0" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round"/><path d="M6 22 H50 C 50 44, 42 56, 28 56 C 14 56, 6 44, 6 22 Z" fill="currentColor"/><path d="M49 28 C 62 28, 62 44, 46 45" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/></svg>
+        <span class="logo-muro__pane">Pane &amp; Dolci</span>
+      </h1>
+      <p class="apertura__frase" data-i18n="h.testo">Il forno di Via Ettore Ponti, alla Barona: il pane di tanti tipi, la focaccia, le pizze e le brioche, e il caffè al banco. Apre alle 7, il sabato alle 6.</p>
+      <p class="apertura__citazione"><span>«Il pane migliore della zona.»</span> <span class="apertura__chi" data-i18n="h.chi">da una recensione su Google</span></p>
+      <div class="voti">
+        <p class="voto"><b class="voto__n">4,5</b> <span class="voto__su" data-i18n="h.google">su Google, 104 recensioni</span></p>
+      </div>
+      <p class="stato" id="orarioStato">Dal lunedì al sabato</p>
+      <div class="apertura__azioni">
+        <a class="bottone bottone--pieno" href="tel:+393343257418"><span data-i18n="t.chiama">Chiama</span>&nbsp;<span class="intero">334 325 7418</span></a>
+        <a class="bottone" href="https://www.google.com/maps/dir/?api=1&amp;destination=L%27Antico+Forno%2C+Via+Ettore+Ponti+33%2C+Milano" target="_blank" rel="noopener" data-i18n="t.indicazioni">Indicazioni</a>
+      </div>
+    </div>
+    <figure class="apertura__foto">
+      <img src="img/vetrina.jpg" width="900" height="600" alt="La vetrina in Via Ettore Ponti: la fascia di mattoni e le lettere in rilievo «L'Antico Forno Caffè» sul vetro." data-i18n-alt="a.vetrina">
+      <figcaption data-i18n="c.vetrina">La vetrina, in Via Ettore Ponti 33.</figcaption>
+    </figure>
+  </section>
+
+  <!-- ══════ IL MURO DI MATTONI: sotto la scala, la firma ══════ -->
+  <section id="mensola" class="capitolo capitolo--mattone" aria-labelledby="mensolaT">
+    <div class="mensola-testo">
+      <p class="etichetta etichetta--chiara" data-i18n="s.etichetta">Sotto la scala</p>
+      <h2 id="mensolaT" class="capitolo__titolo" data-i18n="s.titolo">Un caffè sotto le lampadine</h2>
+      <p data-i18n="s.testo1">Contro il muro di mattoni c'è una vecchia scala di legno appesa di sbieco, con le lampadine sulle corde di juta; sotto, una mensola di legno e qualche sgabello.</p>
+      <p data-i18n="s.testo2">La mattina il caffè e la brioche, a pranzo la pizza al trancio e la focaccia, e il pane da portare a casa. Scegliete che cosa mettere sulla mensola.</p>
+      <figure class="mensola-foto reveal"><button type="button" class="foto" data-full="img/colazione.jpg" aria-label="Ingrandisci la foto" data-i18n-aria="m.ingrandisci"><img src="img/colazione.jpg" width="1200" height="900" alt="Il cappuccino col cuore di latte e una brioche coi semi sulla mensola di legno." data-i18n-alt="a.colazione"></button><figcaption data-i18n="c.colazione">La colazione vera, sulla loro mensola.</figcaption></figure>
+    </div>
+    <figure class="lampade" id="lampade" data-modo="0" data-firma="fatta">
+<!--LAMPADE--><svg class="lampade__svg" id="lampadeSvg" viewBox="0 0 560 470" role="img" aria-labelledby="lampadeTitolo lampadeDesc">
+        <title id="lampadeTitolo" data-i18n="p.titolo">La scala delle lampadine</title>
+        <desc id="lampadeDesc" data-i18n="p.desc">Il loro muro di mattoni con la vecchia scala di legno appesa di sbieco: le lampadine a globo scendono sulle corde di juta, oscillano e si accendono una alla volta, e il locale si illumina. Sulla mensola di legno: colazione, pranzo o pane.</desc>
+        <defs>
+          <clipPath id="lampadeTaglio"><rect x="0" y="0" width="560" height="470" rx="22"/></clipPath>
+          <pattern id="lampadeMattoni" width="60" height="26" patternUnits="userSpaceOnUse">
+            <rect width="60" height="26" fill="#CDB8A2"/>
+            <rect x="1" y="1" width="28" height="11" fill="#A8543A"/><rect x="31" y="1" width="28" height="11" fill="#9E4C33"/>
+            <rect x="-14" y="14" width="28" height="11" fill="#A24F36"/><rect x="16" y="14" width="28" height="11" fill="#AE5A3E"/><rect x="46" y="14" width="28" height="11" fill="#A24F36"/>
+          </pattern>
+          <radialGradient id="lampadeAlone"><stop offset="0" stop-color="#FFE7A8" stop-opacity=".95"/><stop offset=".3" stop-color="#FFC45A" stop-opacity=".5"/><stop offset="1" stop-color="#FFB040" stop-opacity="0"/></radialGradient>
+          <radialGradient id="lampadeVetro" cx=".42" cy=".4" r=".7"><stop offset="0" stop-color="#FFF6D6"/><stop offset=".55" stop-color="#FFD27A"/><stop offset="1" stop-color="#E59A2E"/></radialGradient>
+        </defs>
+        <g clip-path="url(#lampadeTaglio)">
+          <rect class="muro" x="0" y="0" width="560" height="470"/>
+          <g class="muro__macchie"><rect x="241" y="1" width="28" height="11" fill="#C77452" opacity="0.4"/><rect x="361" y="131" width="28" height="11" fill="#C77452" opacity="0.4"/><rect x="241" y="235" width="28" height="11" fill="#7C3623" opacity="0.5"/><rect x="451" y="27" width="28" height="11" fill="#7C3623" opacity="0.4"/><rect x="571" y="209" width="28" height="11" fill="#7C3623" opacity="0.5"/><rect x="256" y="14" width="28" height="11" fill="#C77452" opacity="0.3"/><rect x="496" y="404" width="28" height="11" fill="#7C3623" opacity="0.3"/><rect x="61" y="287" width="28" height="11" fill="#7C3623" opacity="0.4"/><rect x="31" y="287" width="28" height="11" fill="#C77452" opacity="0.4"/><rect x="76" y="300" width="28" height="11" fill="#C77452" opacity="0.5"/><rect x="346" y="326" width="28" height="11" fill="#7C3623" opacity="0.4"/><rect x="271" y="209" width="28" height="11" fill="#7C3623" opacity="0.5"/><rect x="496" y="118" width="28" height="11" fill="#C77452" opacity="0.4"/><rect x="496" y="170" width="28" height="11" fill="#7C3623" opacity="0.3"/><rect x="16" y="248" width="28" height="11" fill="#C77452" opacity="0.4"/><rect x="61" y="339" width="28" height="11" fill="#7C3623" opacity="0.3"/><rect x="271" y="261" width="28" height="11" fill="#C77452" opacity="0.3"/><rect x="421" y="313" width="28" height="11" fill="#7C3623" opacity="0.4"/><rect x="61" y="157" width="28" height="11" fill="#7C3623" opacity="0.5"/><rect x="421" y="1" width="28" height="11" fill="#7C3623" opacity="0.4"/><rect x="496" y="118" width="28" height="11" fill="#7C3623" opacity="0.5"/><rect x="541" y="235" width="28" height="11" fill="#7C3623" opacity="0.3"/><rect x="406" y="378" width="28" height="11" fill="#7C3623" opacity="0.5"/><rect x="226" y="66" width="28" height="11" fill="#7C3623" opacity="0.5"/><rect x="421" y="287" width="28" height="11" fill="#7C3623" opacity="0.4"/><rect x="511" y="209" width="28" height="11" fill="#C77452" opacity="0.3"/><rect x="136" y="14" width="28" height="11" fill="#C77452" opacity="0.4"/><rect x="376" y="326" width="28" height="11" fill="#C77452" opacity="0.3"/><rect x="136" y="378" width="28" height="11" fill="#C77452" opacity="0.5"/><rect x="16" y="248" width="28" height="11" fill="#7C3623" opacity="0.3"/><rect x="436" y="40" width="28" height="11" fill="#C77452" opacity="0.3"/><rect x="151" y="365" width="28" height="11" fill="#7C3623" opacity="0.5"/><rect x="391" y="417" width="28" height="11" fill="#7C3623" opacity="0.4"/><rect x="31" y="79" width="28" height="11" fill="#C77452" opacity="0.4"/><rect x="286" y="404" width="28" height="11" fill="#7C3623" opacity="0.5"/><rect x="391" y="391" width="28" height="11" fill="#7C3623" opacity="0.4"/><rect x="496" y="326" width="28" height="11" fill="#7C3623" opacity="0.4"/><rect x="46" y="14" width="28" height="11" fill="#C77452" opacity="0.3"/><rect x="421" y="1" width="28" height="11" fill="#7C3623" opacity="0.5"/><rect x="241" y="79" width="28" height="11" fill="#C77452" opacity="0.5"/><rect x="1" y="417" width="28" height="11" fill="#C77452" opacity="0.4"/><rect x="16" y="92" width="28" height="11" fill="#7C3623" opacity="0.3"/><rect x="121" y="287" width="28" height="11" fill="#7C3623" opacity="0.5"/><rect x="91" y="183" width="28" height="11" fill="#7C3623" opacity="0.5"/><rect x="196" y="118" width="28" height="11" fill="#C77452" opacity="0.4"/><rect x="511" y="339" width="28" height="11" fill="#7C3623" opacity="0.4"/></g>
+          <rect class="soffitto" x="0" y="0" width="560" height="22"/>
+          <path class="griglia" d="M12 0 V52 M36 0 V52 M60 0 V52 M84 0 V52 M108 0 V52 M132 0 V52 M156 0 V52 M180 0 V52 M204 0 V52 M228 0 V52 M252 0 V52 M276 0 V52 M300 0 V52 M324 0 V52 M348 0 V52 M372 0 V52 M396 0 V52 M420 0 V52 M444 0 V52 M468 0 V52 M492 0 V52 M516 0 V52 M540 0 V52 M564 0 V52 M0 14 H560 M0 30 H560 M0 46 H560"/>
+          <g class="scala" transform="translate(34 64) rotate(33.5)">
+          <rect class="scala__montante" x="0" y="0" width="470" height="9" rx="2"/>
+          <rect class="scala__montante" x="0" y="38" width="470" height="9" rx="2"/>
+          <rect class="scala__piolo" x="18" y="6" width="7" height="35" rx="1.5"/><rect class="scala__piolo" x="65" y="6" width="7" height="35" rx="1.5"/><rect class="scala__piolo" x="112" y="6" width="7" height="35" rx="1.5"/><rect class="scala__piolo" x="159" y="6" width="7" height="35" rx="1.5"/><rect class="scala__piolo" x="206" y="6" width="7" height="35" rx="1.5"/><rect class="scala__piolo" x="253" y="6" width="7" height="35" rx="1.5"/><rect class="scala__piolo" x="300" y="6" width="7" height="35" rx="1.5"/><rect class="scala__piolo" x="347" y="6" width="7" height="35" rx="1.5"/><rect class="scala__piolo" x="394" y="6" width="7" height="35" rx="1.5"/><rect class="scala__piolo" x="441" y="6" width="7" height="35" rx="1.5"/>
+        </g>
+          <path class="nicchia" d="M452 342 V318 A20 20 0 0 1 492 318 V342 Z"/><path class="nicchia__bordo" d="M448 342 V318 A24 24 0 0 1 496 318 V342"/>
+          <g class="mensola">
+          <rect class="mensola__gamba" x="44" y="382" width="5" height="88"/><rect class="mensola__gamba" x="511" y="382" width="5" height="88"/>
+          <rect class="mensola__gamba" x="44" y="444" width="472" height="4"/>
+          <rect class="mensola__piano" x="22" y="368" width="516" height="14" rx="3"/>
+          <rect class="mensola__bordo" x="22" y="379" width="516" height="4" rx="2"/>
+          <path class="mensola__venatura" d="M40 373 H210 M250 375 H420 M460 372 H520"/>
+        </g>
+          <g class="piatti" id="lampadePiatti">
+            <g class="piatto" data-m="0"><g transform="translate(280 368) scale(1.3) translate(-280 -368)">
+            <path class="tovagliolo" d="M112 368 L150 356 L228 362 L196 369 Z"/>
+            <g class="brioche">
+              <path d="M104 364 C 112 342, 136 334, 150 338 C 160 322, 196 322, 206 338 C 222 334, 244 344, 250 364 C 238 366, 226 360, 214 358 C 196 366, 156 366, 140 358 C 128 360, 116 366, 104 364 Z"/>
+              <path class="brioche__piega" d="M150 338 C 154 348, 150 356, 140 358 M206 338 C 202 348, 206 356, 214 358 M178 324 C 176 338, 178 352, 178 362"/>
+              <path class="brioche__lucido" d="M160 330 C 170 326, 186 326, 196 330"/>
+              <g class="brioche__semi"><ellipse cx="179.4" cy="344.8" rx="1.8" ry="1" transform="rotate(111 179.4 344.8)"/><ellipse cx="205.8" cy="341.7" rx="1.8" ry="1" transform="rotate(119 205.8 341.7)"/><ellipse cx="193.2" cy="341.3" rx="1.8" ry="1" transform="rotate(90 193.2 341.3)"/><ellipse cx="190.2" cy="351.7" rx="1.8" ry="1" transform="rotate(74 190.2 351.7)"/><ellipse cx="189.2" cy="345.7" rx="1.8" ry="1" transform="rotate(106 189.2 345.7)"/><ellipse cx="176" cy="330" rx="1.8" ry="1" transform="rotate(65 176 330)"/><ellipse cx="195.9" cy="339.3" rx="1.8" ry="1" transform="rotate(40 195.9 339.3)"/><ellipse cx="177" cy="341.1" rx="1.8" ry="1" transform="rotate(120 177 341.1)"/><ellipse cx="160.7" cy="333.6" rx="1.8" ry="1" transform="rotate(87 160.7 333.6)"/><ellipse cx="189.2" cy="346.9" rx="1.8" ry="1" transform="rotate(64 189.2 346.9)"/><ellipse cx="200.3" cy="347" rx="1.8" ry="1" transform="rotate(69 200.3 347)"/><ellipse cx="175" cy="338.7" rx="1.8" ry="1" transform="rotate(153 175 338.7)"/><ellipse cx="143.9" cy="337.6" rx="1.8" ry="1" transform="rotate(123 143.9 337.6)"/><ellipse cx="182.5" cy="334.6" rx="1.8" ry="1" transform="rotate(34 182.5 334.6)"/><ellipse cx="184.9" cy="335.3" rx="1.8" ry="1" transform="rotate(124 184.9 335.3)"/><ellipse cx="202.7" cy="350.6" rx="1.8" ry="1" transform="rotate(12 202.7 350.6)"/></g>
+            </g>
+            <ellipse class="piattino" cx="344" cy="365" rx="54" ry="8"/>
+            <path class="tazza" d="M306 318 H382 C 382 346, 368 361, 344 361 C 320 361, 306 346, 306 318 Z"/>
+            <path class="tazza__manico" d="M380 326 C 402 326, 402 350, 374 350"/>
+            <ellipse class="tazza__caffe" cx="344" cy="318" rx="38" ry="8"/>
+            <ellipse class="tazza__schiuma" cx="344" cy="318" rx="31" ry="6"/>
+            <path class="tazza__cuore" d="M344 323 C 334 318, 334 313, 339 313 C 342 313, 344 315, 344 317 C 344 315, 346 313, 349 313 C 354 313, 354 318, 344 323 Z"/>
+            <path class="cucchiaino" d="M392 364 L430 360"/>
+            </g></g>
+            <g class="piatto" data-m="1"><g transform="translate(280 368) scale(1.3) translate(-280 -368)">
+            <rect class="tagliere" x="96" y="359" width="176" height="9" rx="2"/>
+            <rect class="pizza__crosta" x="106" y="338" width="156" height="22" rx="4"/>
+            <rect class="pizza__pomodoro" x="110" y="336" width="148" height="10" rx="3"/>
+            <g class="pizza__mozzarella"><ellipse cx="118" cy="337" rx="9" ry="4"/><ellipse cx="149" cy="338" rx="10" ry="4"/><ellipse cx="168" cy="337" rx="11" ry="4"/><ellipse cx="199" cy="338" rx="9" ry="4"/><ellipse cx="220" cy="337" rx="10" ry="4"/><ellipse cx="247" cy="338" rx="11" ry="4"/></g>
+            <g class="pizza__basilico"><path d="M134 334 q 6 -6 12 0 q -6 5 -12 0 Z"/><path d="M184 334 q 6 -6 12 0 q -6 5 -12 0 Z"/><path d="M232 334 q 6 -6 12 0 q -6 5 -12 0 Z"/></g>
+            <path class="focaccia" d="M300 368 V338 C 300 332, 304 330, 312 330 H452 C 460 330, 464 332, 464 338 V368 Z"/>
+            <path class="focaccia__lucido" d="M314 335 H448"/>
+            <g class="focaccia__fossette"><ellipse cx="318" cy="341" rx="3.2" ry="1.8"/><ellipse cx="335" cy="341" rx="3.2" ry="1.8"/><ellipse cx="352" cy="341" rx="3.2" ry="1.8"/><ellipse cx="369" cy="341" rx="3.2" ry="1.8"/><ellipse cx="386" cy="341" rx="3.2" ry="1.8"/><ellipse cx="403" cy="341" rx="3.2" ry="1.8"/><ellipse cx="420" cy="341" rx="3.2" ry="1.8"/><ellipse cx="437" cy="341" rx="3.2" ry="1.8"/><ellipse cx="454" cy="341" rx="3.2" ry="1.8"/><ellipse cx="326" cy="349" rx="3.2" ry="1.8"/><ellipse cx="343" cy="349" rx="3.2" ry="1.8"/><ellipse cx="360" cy="349" rx="3.2" ry="1.8"/><ellipse cx="377" cy="349" rx="3.2" ry="1.8"/><ellipse cx="394" cy="349" rx="3.2" ry="1.8"/><ellipse cx="411" cy="349" rx="3.2" ry="1.8"/><ellipse cx="428" cy="349" rx="3.2" ry="1.8"/><ellipse cx="445" cy="349" rx="3.2" ry="1.8"/><ellipse cx="462" cy="349" rx="3.2" ry="1.8"/><ellipse cx="318" cy="357" rx="3.2" ry="1.8"/><ellipse cx="335" cy="357" rx="3.2" ry="1.8"/><ellipse cx="352" cy="357" rx="3.2" ry="1.8"/><ellipse cx="369" cy="357" rx="3.2" ry="1.8"/><ellipse cx="386" cy="357" rx="3.2" ry="1.8"/><ellipse cx="403" cy="357" rx="3.2" ry="1.8"/><ellipse cx="420" cy="357" rx="3.2" ry="1.8"/><ellipse cx="437" cy="357" rx="3.2" ry="1.8"/><ellipse cx="454" cy="357" rx="3.2" ry="1.8"/></g>
+            <g class="focaccia__rosmarino"><path d="M336 334 l 8 -3 M339 335 l 2 -6 M342 334 l 7 1"/><path d="M384 334 l 8 -3 M387 335 l 2 -6 M390 334 l 7 1"/><path d="M430 334 l 8 -3 M433 335 l 2 -6 M436 334 l 7 1"/></g>
+            </g></g>
+            <g class="piatto" data-m="2"><g transform="translate(280 368) scale(1.3) translate(-280 -368)">
+            <path class="pagnotta" d="M92 368 C 86 334, 126 306, 180 306 C 234 306, 274 334, 268 368 Z"/>
+            <path class="pagnotta__crepa" d="M120 338 C 142 322, 160 334, 178 318 C 196 332, 214 320, 236 336 M150 354 C 166 344, 190 346, 210 354"/>
+            <g class="pagnotta__farina"><ellipse cx="138.2" cy="326.7" rx="8.5" ry="2.9"/><ellipse cx="210.4" cy="324.7" rx="6.8" ry="4.2"/><ellipse cx="229.9" cy="336.7" rx="11.8" ry="4.7"/><ellipse cx="211" cy="337.8" rx="12" ry="2"/><ellipse cx="135.9" cy="332.6" rx="6.4" ry="2.7"/><ellipse cx="171.5" cy="338.3" rx="5.6" ry="2.3"/><ellipse cx="161.8" cy="341.9" rx="6.2" ry="3.4"/><ellipse cx="126.2" cy="330.8" rx="5.1" ry="4.3"/><ellipse cx="125.1" cy="343.3" rx="7.9" ry="2.7"/><ellipse cx="191.1" cy="338.8" rx="12.6" ry="4"/><ellipse cx="120.8" cy="327.4" rx="12.3" ry="2.4"/><ellipse cx="158.2" cy="319.1" rx="7.7" ry="4"/></g>
+            <g class="tartaruga"><path d="M308 368 C 306 342, 322 328, 340 328 C 358 328, 374 342, 372 368 Z"/><path class="tartaruga__guscio" d="M318 342 L354 362 M328 334 L364 356 M314 356 L338 332 M326 364 L356 334 M342 366 L366 344"/></g><g class="tartaruga"><path d="M378 368 C 376 342, 392 328, 410 328 C 428 328, 444 342, 442 368 Z"/><path class="tartaruga__guscio" d="M388 342 L424 362 M398 334 L434 356 M384 356 L408 332 M396 364 L426 334 M412 366 L436 344"/></g>
+            </g></g>
+          </g>
+          <g class="sgabello"><path class="sgabello__gamba" d="M98 424 L88 470 M138 424 L148 470 M118 426 V470 M93 452 H143"/><ellipse class="sgabello__seduta" cx="118" cy="420" rx="30" ry="7"/></g><g class="sgabello"><path class="sgabello__gamba" d="M260 424 L250 470 M300 424 L310 470 M280 426 V470 M255 452 H305"/><ellipse class="sgabello__seduta" cx="280" cy="420" rx="30" ry="7"/></g><g class="sgabello"><path class="sgabello__gamba" d="M422 424 L412 470 M462 424 L472 470 M442 426 V470 M417 452 H467"/><ellipse class="sgabello__seduta" cx="442" cy="420" rx="30" ry="7"/></g>
+          <rect class="buio" x="0" y="0" width="560" height="470" opacity="0"/>
+          <g class="lampada" data-i="0" transform="translate(128 34)">
+          <g class="lampada__oscilla" transform="rotate(0)">
+            <g class="lampada__filo" transform="scale(1 1)"><path class="corda" d="M0 0 V150"/><path class="corda__giro" d="M0 0 V150"/></g>
+            <g class="lampada__bulbo" transform="translate(0 150)">
+              <rect class="attacco attacco--juta" x="-6" y="0" width="12" height="18" rx="2"/>
+              <circle class="vetro" cx="0" cy="35" r="17"/>
+              <path class="filamento" d="M-4 20 V28 C -7 38, 7 38, 4 28 V20"/>
+              <g class="lampada__luce" opacity="1">
+                <circle class="alone" cx="0" cy="35" r="66"/>
+                <circle class="vetro vetro--acceso" cx="0" cy="35" r="17"/>
+                <path class="filamento filamento--acceso" d="M-4 20 V28 C -7 38, 7 38, 4 28 V20"/>
+                <path class="vetro__riflesso" d="M-10 27 A12 12 0 0 1 -3 22"/>
+              </g>
+            </g>
+          </g>
+        </g>
+          <g class="lampada" data-i="1" transform="translate(222 34)">
+          <g class="lampada__oscilla" transform="rotate(0)">
+            <g class="lampada__filo" transform="scale(1 1)"><path class="corda" d="M0 0 V188"/><path class="corda__giro" d="M0 0 V188"/></g>
+            <g class="lampada__bulbo" transform="translate(0 188)">
+              <rect class="attacco attacco--juta" x="-6" y="0" width="12" height="18" rx="2"/>
+              <circle class="vetro" cx="0" cy="35" r="17"/>
+              <path class="filamento" d="M-4 20 V28 C -7 38, 7 38, 4 28 V20"/>
+              <g class="lampada__luce" opacity="1">
+                <circle class="alone" cx="0" cy="35" r="66"/>
+                <circle class="vetro vetro--acceso" cx="0" cy="35" r="17"/>
+                <path class="filamento filamento--acceso" d="M-4 20 V28 C -7 38, 7 38, 4 28 V20"/>
+                <path class="vetro__riflesso" d="M-10 27 A12 12 0 0 1 -3 22"/>
+              </g>
+            </g>
+          </g>
+        </g>
+          <g class="lampada" data-i="2" transform="translate(316 34)">
+          <g class="lampada__oscilla" transform="rotate(0)">
+            <g class="lampada__filo" transform="scale(1 1)"><path class="corda" d="M0 0 V164"/><path class="corda__giro" d="M0 0 V164"/></g>
+            <g class="lampada__bulbo" transform="translate(0 164)">
+              <rect class="attacco attacco--juta" x="-6" y="0" width="12" height="18" rx="2"/>
+              <circle class="vetro" cx="0" cy="35" r="17"/>
+              <path class="filamento" d="M-4 20 V28 C -7 38, 7 38, 4 28 V20"/>
+              <g class="lampada__luce" opacity="1">
+                <circle class="alone" cx="0" cy="35" r="66"/>
+                <circle class="vetro vetro--acceso" cx="0" cy="35" r="17"/>
+                <path class="filamento filamento--acceso" d="M-4 20 V28 C -7 38, 7 38, 4 28 V20"/>
+                <path class="vetro__riflesso" d="M-10 27 A12 12 0 0 1 -3 22"/>
+              </g>
+            </g>
+          </g>
+        </g>
+          <g class="lampada" data-i="3" transform="translate(430 34)">
+          <g class="lampada__oscilla" transform="rotate(0)">
+            <g class="lampada__filo" transform="scale(1 1)"><path class="filo" d="M0 0 V104"/></g>
+            <g class="lampada__bulbo" transform="translate(0 104)">
+              <rect class="attacco" x="-6" y="0" width="12" height="18" rx="2"/><path class="attacco__anelli" d="M-6 5 H6 M-6 11 H6"/>
+              <circle class="vetro" cx="0" cy="35" r="17"/>
+              <path class="filamento" d="M-4 20 V28 C -7 38, 7 38, 4 28 V20"/>
+              <g class="lampada__luce" opacity="1">
+                <circle class="alone" cx="0" cy="35" r="66"/>
+                <circle class="vetro vetro--acceso" cx="0" cy="35" r="17"/>
+                <path class="filamento filamento--acceso" d="M-4 20 V28 C -7 38, 7 38, 4 28 V20"/>
+                <path class="vetro__riflesso" d="M-10 27 A12 12 0 0 1 -3 22"/>
+              </g>
+            </g>
+          </g>
+        </g>
+          <g class="lampada" data-i="4" transform="translate(494 34)">
+          <g class="lampada__oscilla" transform="rotate(0)">
+            <g class="lampada__filo" transform="scale(1 1)"><path class="filo" d="M0 0 V150"/></g>
+            <g class="lampada__bulbo" transform="translate(0 150)">
+              <rect class="attacco" x="-6" y="0" width="12" height="18" rx="2"/><path class="attacco__anelli" d="M-6 5 H6 M-6 11 H6"/>
+              <circle class="vetro" cx="0" cy="35" r="17"/>
+              <path class="filamento" d="M-4 20 V28 C -7 38, 7 38, 4 28 V20"/>
+              <g class="lampada__luce" opacity="1">
+                <circle class="alone" cx="0" cy="35" r="66"/>
+                <circle class="vetro vetro--acceso" cx="0" cy="35" r="17"/>
+                <path class="filamento filamento--acceso" d="M-4 20 V28 C -7 38, 7 38, 4 28 V20"/>
+                <path class="vetro__riflesso" d="M-10 27 A12 12 0 0 1 -3 22"/>
+              </g>
+            </g>
+          </g>
+        </g>
+        </g>
+      </svg><!--/LAMPADE-->
+      <figcaption class="lampade__didascalia">
+        <span class="lampade__d" data-m="0" data-i18n="p.d0">La colazione: il cappuccino col cuore e una brioche coi semi.</span>
+        <span class="lampade__d" data-m="1" data-i18n="p.d1">Il pranzo: la pizza al trancio e la focaccia.</span>
+        <span class="lampade__d" data-m="2" data-i18n="p.d2">Il pane: una pagnotta a lievito madre e due tartarughe.</span>
+      </figcaption>
+      <div class="lampade__modi" role="group" aria-label="Che cosa sulla mensola" data-i18n-aria="p.modi">
+        <button type="button" data-modo="0" aria-pressed="true" data-i18n="p.b0">Colazione</button>
+        <button type="button" data-modo="1" aria-pressed="false" data-i18n="p.b1">Pranzo</button>
+        <button type="button" data-modo="2" aria-pressed="false" data-i18n="p.b2">Pane</button>
+      </div>
+      <p class="visually-hidden" id="lampadeLeggi" aria-live="polite"></p>
+    </figure>
+  </section>
+
+  <!-- ══════ LE PIASTRELLE BIANCHE: le lavagne e le mensole di ferro ══════ -->
+  <section id="lavagne" class="capitolo capitolo--piastrelle" aria-labelledby="lavagneT">
+    <p class="etichetta" data-i18n="l.etichetta">Le lavagne</p>
+    <h2 id="lavagneT" class="capitolo__titolo" data-i18n="l.titolo">Pane, focaccia, caffè, grissini</h2>
+    <p class="capitolo__sotto" data-i18n="l.sotto">Le quattro lavagne nere sopra il banco, con le loro parole (e senza i prezzi), come le ha fotografate un cliente un anno fa: chiedete al banco cosa c'è oggi.</p>
+    <div class="lavagne">
+      <section class="lavagna reveal" aria-labelledby="lvPane">
+        <h3 id="lvPane" class="lavagna__titolo" data-i18n="l.pane">Pane</h3>
+        <ul class="lavagna__voci">
+          <li data-i18n="l.p1">Lievito madre</li><li data-i18n="l.p2">Francesini</li><li data-i18n="l.p3">Bocconcini</li><li data-i18n="l.p4">Pasta dura</li><li data-i18n="l.p5">Pane olio</li>
+          <li data-i18n="l.p6">Integrale</li><li data-i18n="l.p7">5 cereali</li><li data-i18n="l.p8">Pan focaccia</li><li data-i18n="l.p9">Pane di curcuma</li><li data-i18n="l.p10">Siciliano</li>
+        </ul>
+      </section>
+      <section class="lavagna reveal" aria-labelledby="lvFocaccia">
+        <h3 id="lvFocaccia" class="lavagna__titolo" data-i18n="l.focaccia">Focaccia</h3>
+        <ul class="lavagna__voci">
+          <li data-i18n="l.f1">Focaccia farcita</li><li data-i18n="l.f2">Pizza farcita</li><li data-i18n="l.f3">Pizza rotondo</li><li data-i18n="l.f4">Pizza rotondo farcita</li>
+          <li data-i18n="l.f5">Lingua Margherita</li><li data-i18n="l.f6">Lingua farcita</li><li data-i18n="l.f7">Focaccina</li>
+        </ul>
+      </section>
+      <section class="lavagna reveal" aria-labelledby="lvCaffe">
+        <h3 id="lvCaffe" class="lavagna__titolo" data-i18n="l.caffe">Caffè</h3>
+        <ul class="lavagna__voci">
+          <li data-i18n="l.c1">Caffè</li><li data-i18n="l.c2">Cappuccino</li><li data-i18n="l.c3">Caffè decaffeinato</li><li data-i18n="l.c4">Ginseng</li>
+          <li data-i18n="l.c5">Brioche</li><li data-i18n="l.c6">Brioche speciale</li><li data-i18n="l.c7">Torta</li><li data-i18n="l.c8">Arancini</li>
+        </ul>
+      </section>
+      <section class="lavagna reveal" aria-labelledby="lvGrissini">
+        <h3 id="lvGrissini" class="lavagna__titolo" data-i18n="l.grissini">Grissini</h3>
+        <ul class="lavagna__voci">
+          <li data-i18n="l.g1">Grissini con olive</li><li data-i18n="l.g2">Grissini normali</li><li data-i18n="l.g3">Grissini con sesamo</li>
+          <li data-i18n="l.g4">Schiacciatina normale</li><li data-i18n="l.g5">Schiacciatina con olive</li><li data-i18n="l.g6">Schiacciatina con sesamo</li>
+        </ul>
+      </section>
+    </div>
+    <p class="lavagne__feste" data-i18n="l.feste">Per una festa: vassoi di focaccia e brioche su prenotazione, racconta un cliente. Chiamate il 334&nbsp;325&nbsp;7418.</p>
+    <ul class="ferro">
+      <li class="ferro__largo reveal"><figure><button type="button" class="foto" data-full="img/pane.jpg" aria-label="Ingrandisci la foto" data-i18n-aria="m.ingrandisci"><img src="img/pane.jpg" width="760" height="730" alt="Le mensole di ferro sulle piastrelle bianche coi pani grandi e i panini, e il banco di marmo con le brioche." data-i18n-alt="a.pane"></button><figcaption data-i18n="c.pane">Il pane sulle mensole di ferro.</figcaption></figure></li>
+      <li class="reveal"><figure><button type="button" class="foto" data-full="img/lievito.jpg" aria-label="Ingrandisci la foto" data-i18n-aria="m.ingrandisci"><img src="img/lievito.jpg" width="450" height="600" alt="I pani grandi col cartellino «Lievito madre» e i panini col cartellino «Tartaruga»." data-i18n-alt="a.lievito"></button><figcaption data-i18n="c.lievito">Lievito madre e tartarughe.</figcaption></figure></li>
+      <li class="reveal"><figure><button type="button" class="foto" data-full="img/cornetto.jpg" aria-label="Ingrandisci la foto" data-i18n-aria="m.ingrandisci"><img src="img/cornetto.jpg" width="720" height="920" alt="Un cornetto dorato sul vassoio di carta, sulla mensola di legno." data-i18n-alt="a.cornetto"></button><figcaption data-i18n="c.cornetto">Un cornetto.</figcaption></figure></li>
+      <li class="ferro__largo reveal"><figure><button type="button" class="foto" data-full="img/banco.jpg" aria-label="Ingrandisci la foto" data-i18n-aria="m.ingrandisci"><img src="img/banco.jpg" width="1280" height="776" alt="Il banco di marmo con le cementine grigie e la pasticceria secca: occhi di bue, cannoli, frolle al cioccolato e al pistacchio." data-i18n-alt="a.banco"></button><figcaption data-i18n="c.banco">La pasticceria secca sul banco.</figcaption></figure></li>
+    </ul>
+  </section>
+
+  <!-- ══════ IL NEGOZIO ══════ -->
+  <section id="negozio" class="capitolo capitolo--muro" aria-labelledby="negozioT">
+    <p class="etichetta" data-i18n="g.etichetta">Il negozio</p>
+    <h2 id="negozioT" class="capitolo__titolo" data-i18n="g.titolo">Mattone, ferro e piastrelle bianche</h2>
+    <p class="capitolo__sotto" data-i18n="g.sotto">Il muro grigio col logo nero, il mattone con la scala, le mensole di ferro sulle piastrelle bianche, il banco di marmo con le cementine. Di sera la vetrina resta accesa.</p>
+    <ul class="negozio">
+      <li class="negozio__alto reveal"><figure><button type="button" class="foto" data-full="img/scala.jpg" aria-label="Ingrandisci la foto" data-i18n-aria="m.ingrandisci"><img src="img/scala.jpg" width="830" height="1180" alt="Il muro di mattoni con la scala di legno di sbieco, le lampadine sulle corde di juta, un piccolo arco nel mattone e la mensola con gli sgabelli." data-i18n-alt="a.scala"></button><figcaption data-i18n="c.scala">La scala e la mensola.</figcaption></figure></li>
+      <li class="reveal"><figure><button type="button" class="foto" data-full="img/logo.jpg" aria-label="Ingrandisci la foto" data-i18n-aria="m.ingrandisci"><img src="img/logo.jpg" width="640" height="830" alt="Il logo nero sul muro grigio: «L'Antico Forno, Caffè», la tazzina, «Pane &amp; Dolci»; le lampadine e le piastrelle bianche." data-i18n-alt="a.logo"></button><figcaption data-i18n="c.logo">Il logo sul muro grigio.</figcaption></figure></li>
+      <li class="reveal"><figure><button type="button" class="foto" data-full="img/sera.jpg" aria-label="Ingrandisci la foto" data-i18n-aria="m.ingrandisci"><img src="img/sera.jpg" width="620" height="660" alt="La vetrina di sera, accesa: «L'Antico Forno, Pane &amp; Dolci», le lavagne, la mensola con gli sgabelli." data-i18n-alt="a.sera"></button><figcaption data-i18n="c.sera">La vetrina, di sera.</figcaption></figure></li>
+      <li class="negozio__largo reveal"><figure><button type="button" class="foto" data-full="img/lampade.jpg" aria-label="Ingrandisci la foto" data-i18n-aria="m.ingrandisci"><img src="img/lampade.jpg" width="900" height="1000" alt="La scala sul mattone con tre lampadine sulle corde di juta, la griglia di ferro sul soffitto, la mensola e gli sgabelli." data-i18n-alt="a.lampade"></button><figcaption data-i18n="c.lampade">Le lampadine sulla scala.</figcaption></figure></li>
+    </ul>
+  </section>
+
+  <!-- ══════ DICONO ══════ -->
+  <section id="dicono" class="capitolo capitolo--crema" aria-labelledby="diconoT">
+    <p class="etichetta" data-i18n="d.etichetta">Dicono</p>
+    <h2 id="diconoT" class="capitolo__titolo" data-i18n="d.titolo">Il pane, e poi tutto il resto</h2>
+    <div class="voti voti--centro">
+      <p class="voto"><b class="voto__n">4,5</b> <span class="voto__su" data-i18n="d.google">su Google, 104 recensioni</span></p>
+    </div>
+    <ul class="recensioni">
+      <li class="recensione reveal"><p class="recensione__testo">«Pane eccellente, anche con lievito madre. […] Personale veloce e gentile. Possibilità di prendere bevande e caffetteria.»</p><p class="recensione__chi"><b>Nicola Di Terlizzi</b> <span data-i18n="d.g7m">Google, 7 mesi fa</span></p></li>
+      <li class="recensione reveal"><p class="recensione__testo">«Un piccolo angolo di paradiso, considerando che di panettieri buoni a Milano ce ne sono davvero pochi!. Potete gustare […] degli ottimi dolci (io ho assaggiato una tartelletta al pistacchio e un pasticciotto) accompagnati da un caffè. Ottimi anche i prodotti da panificio: il pane alle noci è fenomenale!»</p><p class="recensione__chi"><b>Beatrice Pandolfi</b> <span data-i18n="d.g2a">Google, 2 anni fa</span></p></li>
+      <li class="recensione reveal"><p class="recensione__testo">«L'antico forno panetteria moderna, arredata con buon gusto, propone colazioni con caffè, cappuccini e brioche farcite, dolci vari e prodotti salati come la focaccia genovese o diversi tipi di pizze. Bello e buono anche il pane con vari di tipi di grano. Commesse simpatiche e gentili. […]»</p><p class="recensione__chi"><b>Claudio</b> <span data-i18n="d.g1a">Google, un anno fa</span></p></li>
+      <li class="recensione reveal"><p class="recensione__testo">«In questo panificio realizzano prodotti veramente buoni. Ho prenotato un paio di vassoi di focaccia e delle brioches per il mio compleanno (aprile 2025) ed era tutto freschissimo e davvero tanto buono. […]»</p><p class="recensione__chi"><b>Alessio Blasi</b> <span data-i18n="d.g10m">Google, 10 mesi fa</span></p></li>
+      <li class="recensione reveal"><p class="recensione__testo">«Ottimo panificio in zona Barona.<br>Buonissime le focaccine, pizzette e focacce e il pane in generale.»</p><p class="recensione__chi"><b>Stefano Martinoli</b> <span data-i18n="d.g10m">Google, 10 mesi fa</span></p></li>
+      <li class="recensione reveal"><p class="recensione__testo">«Siamo passate per la prima volta a fare colazione, prodotti buonissimi con una gentilezza e cordialità da parte del personale meraviglioso<br>Provato sia dolce che salato<br>Top grazie»</p><p class="recensione__chi"><b>Clara Buccinotti</b> <span data-i18n="d.g1a">Google, un anno fa</span></p></li>
+    </ul>
+    <p class="dicono__nota"><span data-i18n="d.nota">Dalle recensioni su Google, come sono state scritte. Anche la frase in alto viene da una recensione su Google.</span> <a href="https://www.google.com/maps/search/?api=1&amp;query=L%27Antico+Forno%2C+Via+Ettore+Ponti+33%2C+Milano" target="_blank" rel="noopener" data-i18n="d.tutte">Tutte le recensioni su Google</a></p>
+  </section>
+
+  <!-- ══════ ORARI E DOVE: i sette giorni sulle cementine del banco ══════ -->
+  <section id="orari" class="capitolo" aria-labelledby="orariT">
+    <p class="etichetta" data-i18n="o.etichetta">Orari e dove</p>
+    <h2 id="orariT" class="capitolo__titolo" data-i18n="o.titolo">Dalle 7, il sabato dalle 6</h2>
+    <p class="stato stato--settimana" id="orarioStato2" aria-hidden="true"></p>
+    <div class="cementine" role="table" aria-label="Orari di apertura" data-i18n-aria="o.cap">
+      <div class="cementina" role="row" data-day="1"><span class="cementina__g" role="rowheader" data-i18n="g.lun">Lunedì</span><span class="cementina__ore" role="cell">7–19:30</span></div>
+      <div class="cementina" role="row" data-day="2"><span class="cementina__g" role="rowheader" data-i18n="g.mar">Martedì</span><span class="cementina__ore" role="cell">7–19:30</span></div>
+      <div class="cementina" role="row" data-day="3"><span class="cementina__g" role="rowheader" data-i18n="g.mer">Mercoledì</span><span class="cementina__ore" role="cell">7–19:30</span></div>
+      <div class="cementina" role="row" data-day="4"><span class="cementina__g" role="rowheader" data-i18n="g.gio">Giovedì</span><span class="cementina__ore" role="cell">7–19:30</span></div>
+      <div class="cementina" role="row" data-day="5"><span class="cementina__g" role="rowheader" data-i18n="g.ven">Venerdì</span><span class="cementina__ore" role="cell">7–19:30</span></div>
+      <div class="cementina" role="row" data-day="6"><span class="cementina__g" role="rowheader" data-i18n="g.sab">Sabato</span><span class="cementina__ore" role="cell">6–14</span></div>
+      <div class="cementina cementina--chiuso" role="row" data-day="0"><span class="cementina__g" role="rowheader" data-i18n="g.dom">Domenica</span><span class="cementina__ore" role="cell" data-i18n="o.chiuso">chiuso</span></div>
+    </div>
+    <p class="cementine__nota" data-i18n="o.nota">Orari dalla loro scheda Google (settembre 2026). Per agosto e i giorni di festa conviene telefonare.</p>
+    <div class="dove">
+      <div class="cartina reveal">
+        <iframe title="Mappa: L'Antico Forno, Via Ettore Ponti 33, Milano" data-i18n-title="o.mappa" src="https://maps.google.com/maps?q=L%27Antico%20Forno%2C%20Via%20Ettore%20Ponti%2033%2C%20Milano&amp;z=16&amp;output=embed" width="600" height="400" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="dove__testo">
+        <dl class="indirizzo">
+          <div><dt data-i18n="o.dove">Dove</dt><dd data-i18n="o.dovev">Via Ettore Ponti 33, 20143 Milano, alla Barona</dd></div>
+          <div><dt data-i18n="o.bus">In bus</dt><dd data-i18n="o.busv">Il 74 in Via Binda, angolo Via Ettore Ponti, a circa 50&nbsp;metri; il 47 in Piazza Bilbao, a circa 90</dd></div>
+          <div><dt data-i18n="o.tram">In tram</dt><dd data-i18n="o.tramv">Il 2 in Via Lodovico il Moro, sul Naviglio Grande, a circa 600&nbsp;metri</dd></div>
+          <div><dt data-i18n="o.metro">In metro</dt><dd data-i18n="o.metrov">M2 Romolo, a circa un chilometro</dd></div>
+          <div><dt data-i18n="o.tel">Telefono</dt><dd><a href="tel:+393343257418" class="intero">334 325 7418</a></dd></div>
+        </dl>
+        <p class="dove__azioni"><a class="bottone bottone--pieno" href="tel:+393343257418"><span data-i18n="t.chiama">Chiama</span>&nbsp;<span class="intero">334 325 7418</span></a> <a class="bottone" href="https://www.google.com/maps/dir/?api=1&amp;destination=L%27Antico+Forno%2C+Via+Ettore+Ponti+33%2C+Milano" target="_blank" rel="noopener" data-i18n="t.indicazioni">Indicazioni</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════ DOMANDE ══════ -->
+  <section id="domande" class="capitolo capitolo--crema" aria-labelledby="domandeT">
+    <p class="etichetta" data-i18n="q.etichetta">Domande</p>
+    <h2 id="domandeT" class="capitolo__titolo" data-i18n="q.titolo">Prima di passare</h2>
+    <div class="domande">
+      <details><summary data-i18n="q.1">A che ora aprite?</summary><p data-i18n="q.1r">Dal lunedì al venerdì dalle 7 alle 19:30, il sabato dalle 6 alle 14. La domenica è chiuso.</p></details>
+      <details><summary data-i18n="q.2">Si può fare colazione lì?</summary><p data-i18n="q.2r">Sì: caffè, cappuccino e brioche al banco, o sugli sgabelli della mensola sotto la scala.</p></details>
+      <details><summary data-i18n="q.3">Che pane fate?</summary><p data-i18n="q.3r">Sulla loro lavagna: lievito madre, francesini, bocconcini, pasta dura, pane all'olio, integrale, 5 cereali, pan focaccia, pane alla curcuma, siciliano. Chiedete al banco cosa c'è oggi.</p></details>
+      <details><summary data-i18n="q.4">Si possono ordinare vassoi per una festa?</summary><p data-i18n="q.4r">Un cliente racconta di aver prenotato vassoi di focaccia e brioche per il suo compleanno: chiamate il 334 325 7418 per mettervi d'accordo.</p></details>
+      <details><summary data-i18n="q.5">Come si arriva?</summary><p data-i18n="q.5r">Via Ettore Ponti 33, alla Barona: il bus 74 ferma in Via Binda, angolo Via Ettore Ponti, a circa 50 metri; il 47 in Piazza Bilbao, a circa 90. Il tram 2 passa in Via Lodovico il Moro, a circa 600 metri; la M2 Romolo è a circa un chilometro.</p></details>
+    </div>
+  </section>
+
+</main>
+
+<footer class="piede">
+  <div class="piede__dentro">
+    <p class="logo-piede" aria-hidden="true"><span>L'Antico Forno</span> <span>Caffè</span> <span>Pane &amp; Dolci</span></p>
+    <p class="piede__dove">Via Ettore Ponti 33, 20143 Milano · <a href="tel:+393343257418" class="intero">334 325 7418</a></p>
+    <p class="piede__orario" data-i18n="f2.orario">Dal lunedì al venerdì 7–19:30 · sabato 6–14 · domenica chiuso</p>
+    <p class="piede__cred" data-i18n="f2.cred">Sito dimostrativo realizzato da <a href="https://bespokestud.io" rel="noopener">Bespoke Studio</a> · le foto sono di clienti, dalla loro scheda Google; orari, lavagne e recensioni da Google (settembre 2026). La scala con le lampadine l&#39;abbiamo disegnata noi.</p>
+    <p><a class="piede__su" href="#inizio" data-i18n="f2.su">Torna su ↑</a></p>
+  </div>
+</footer>
+
+<div id="actionBar" class="action-bar">
+  <a href="tel:+393343257418"><span data-i18n="t.chiama">Chiama</span></a>
+  <a href="https://www.google.com/maps/dir/?api=1&amp;destination=L%27Antico+Forno%2C+Via+Ettore+Ponti+33%2C+Milano" target="_blank" rel="noopener"><span data-i18n="t.indicazioni">Indicazioni</span></a>
+</div>
+
+<div id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Foto ingrandita" data-i18n-aria="m.lightbox">
+  <button id="lightboxClose" type="button" aria-label="Chiudi" data-i18n-aria="m.chiudi">×</button>
+  <img id="lightboxImg" src="" alt="">
+</div>
+
+</body>
+</html>
