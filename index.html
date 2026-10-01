@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
 <script>(function(){var r=document.documentElement;r.classList.remove('no-js');
 /* la firma: finché main.js non parte le lampadine restano su, spente, col locale al buio; se il codice non arriva, dopo 2,5 s sono accese (stato finale) */
 try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){r.classList.add('firma-attesa');window.__attesaLampade=setTimeout(function(){r.classList.remove('firma-attesa')},2500)}}catch(e){}})()</script>
@@ -20,15 +21,54 @@ try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){r.classList.add(
 <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="img/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500;600;700&amp;family=Spline+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="fonts/fonts.css?v=1">
 <link rel="stylesheet" href="css/styles.css?v=1">
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
 <script src="js/main.js?v=1" defer></script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Bakery","name":"L'Antico Forno","description":"Panificio con caffetteria in Via Ettore Ponti 33 a Milano: pane, focaccia, pizze, brioche e dolci, la colazione al banco.","url":"https://rotenzark.github.io/antico-forno-barona/","image":"https://rotenzark.github.io/antico-forno-barona/img/og.jpg","telephone":"+39 334 325 7418","address":{"@type":"PostalAddress","streetAddress":"Via Ettore Ponti 33","postalCode":"20143","addressLocality":"Milano","addressRegion":"MI","addressCountry":"IT"},"geo":{"@type":"GeoCoordinates","latitude":45.44212,"longitude":9.15517},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"07:00","closes":"19:30"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"06:00","closes":"14:00"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.5","reviewCount":"104","bestRating":"5"}}
+{
+  "@context": "https://schema.org",
+  "@type": "Bakery",
+  "name": "L'Antico Forno",
+  "description": "Panificio con caffetteria in Via Ettore Ponti 33 a Milano: pane, focaccia, pizze, brioche e dolci, la colazione al banco.",
+  "url": "https://rotenzark.github.io/antico-forno-barona/",
+  "image": "https://rotenzark.github.io/antico-forno-barona/img/og.jpg",
+  "telephone": "+39 334 325 7418",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Via Ettore Ponti 33",
+    "postalCode": "20143",
+    "addressLocality": "Milano",
+    "addressRegion": "MI",
+    "addressCountry": "IT"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 45.44212,
+    "longitude": 9.15517
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "07:00",
+      "closes": "19:30"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "06:00",
+      "closes": "14:00"
+    }
+  ]
+}
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
@@ -90,7 +130,7 @@ try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){r.classList.add(
         <span class="logo-muro__pane">Pane &amp; Dolci</span>
       </h1>
       <p class="apertura__frase" data-i18n="h.testo">Il forno di Via Ettore Ponti, alla Barona: il pane di tanti tipi, la focaccia, le pizze e le brioche, e il caffè al banco. Apre alle 7, il sabato alle 6.</p>
-      <p class="apertura__citazione"><span>«Il pane migliore della zona.»</span> <span class="apertura__chi" data-i18n="h.chi">da una recensione su Google</span></p>
+      <p class="apertura__citazione"><span lang="it">«Il pane migliore della zona.»</span> <span class="apertura__chi" data-i18n="h.chi">da una recensione su Google</span></p>
       <div class="voti">
         <p class="voto"><b class="voto__n">4,5</b> <span class="voto__su" data-i18n="h.google">su Google, 104 recensioni</span></p>
       </div>
@@ -345,12 +385,12 @@ try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){r.classList.add(
       <p class="voto"><b class="voto__n">4,5</b> <span class="voto__su" data-i18n="d.google">su Google, 104 recensioni</span></p>
     </div>
     <ul class="recensioni">
-      <li class="recensione reveal"><p class="recensione__testo">«Pane eccellente, anche con lievito madre. […] Personale veloce e gentile. Possibilità di prendere bevande e caffetteria.»</p><p class="recensione__chi"><b>Nicola Di Terlizzi</b> <span data-i18n="d.g7m">Google, 7 mesi fa</span></p></li>
-      <li class="recensione reveal"><p class="recensione__testo">«Un piccolo angolo di paradiso, considerando che di panettieri buoni a Milano ce ne sono davvero pochi!. Potete gustare […] degli ottimi dolci (io ho assaggiato una tartelletta al pistacchio e un pasticciotto) accompagnati da un caffè. Ottimi anche i prodotti da panificio: il pane alle noci è fenomenale!»</p><p class="recensione__chi"><b>Beatrice Pandolfi</b> <span data-i18n="d.g2a">Google, 2 anni fa</span></p></li>
-      <li class="recensione reveal"><p class="recensione__testo">«L'antico forno panetteria moderna, arredata con buon gusto, propone colazioni con caffè, cappuccini e brioche farcite, dolci vari e prodotti salati come la focaccia genovese o diversi tipi di pizze. Bello e buono anche il pane con vari di tipi di grano. Commesse simpatiche e gentili. […]»</p><p class="recensione__chi"><b>Claudio</b> <span data-i18n="d.g1a">Google, un anno fa</span></p></li>
-      <li class="recensione reveal"><p class="recensione__testo">«In questo panificio realizzano prodotti veramente buoni. Ho prenotato un paio di vassoi di focaccia e delle brioches per il mio compleanno (aprile 2025) ed era tutto freschissimo e davvero tanto buono. […]»</p><p class="recensione__chi"><b>Alessio Blasi</b> <span data-i18n="d.g10m">Google, 10 mesi fa</span></p></li>
+      <li class="recensione reveal"><p lang="it" class="recensione__testo">«Pane eccellente, anche con lievito madre. […] Personale veloce e gentile. Possibilità di prendere bevande e caffetteria.»</p><p class="recensione__chi"><b>Nicola Di Terlizzi</b> <span data-i18n="d.g7m">Google, 7 mesi fa</span></p></li>
+      <li class="recensione reveal"><p lang="it" class="recensione__testo">«Un piccolo angolo di paradiso, considerando che di panettieri buoni a Milano ce ne sono davvero pochi!. Potete gustare […] degli ottimi dolci (io ho assaggiato una tartelletta al pistacchio e un pasticciotto) accompagnati da un caffè. Ottimi anche i prodotti da panificio: il pane alle noci è fenomenale!»</p><p class="recensione__chi"><b>Beatrice Pandolfi</b> <span data-i18n="d.g2a">Google, 2 anni fa</span></p></li>
+      <li class="recensione reveal"><p lang="it" class="recensione__testo">«L'antico forno panetteria moderna, arredata con buon gusto, propone colazioni con caffè, cappuccini e brioche farcite, dolci vari e prodotti salati come la focaccia genovese o diversi tipi di pizze. Bello e buono anche il pane con vari di tipi di grano. Commesse simpatiche e gentili. […]»</p><p class="recensione__chi"><b>Claudio</b> <span data-i18n="d.g1a">Google, un anno fa</span></p></li>
+      <li class="recensione reveal"><p lang="it" class="recensione__testo">«In questo panificio realizzano prodotti veramente buoni. Ho prenotato un paio di vassoi di focaccia e delle brioches per il mio compleanno (aprile 2025) ed era tutto freschissimo e davvero tanto buono. […]»</p><p class="recensione__chi"><b>Alessio Blasi</b> <span data-i18n="d.g10m">Google, 10 mesi fa</span></p></li>
       <li class="recensione reveal"><p class="recensione__testo">«Ottimo panificio in zona Barona.<br>Buonissime le focaccine, pizzette e focacce e il pane in generale.»</p><p class="recensione__chi"><b>Stefano Martinoli</b> <span data-i18n="d.g10m">Google, 10 mesi fa</span></p></li>
-      <li class="recensione reveal"><p class="recensione__testo">«Siamo passate per la prima volta a fare colazione, prodotti buonissimi con una gentilezza e cordialità da parte del personale meraviglioso<br>Provato sia dolce che salato<br>Top grazie»</p><p class="recensione__chi"><b>Clara Buccinotti</b> <span data-i18n="d.g1a">Google, un anno fa</span></p></li>
+      <li class="recensione reveal"><p lang="it" class="recensione__testo">«Siamo passate per la prima volta a fare colazione, prodotti buonissimi con una gentilezza e cordialità da parte del personale meraviglioso<br>Provato sia dolce che salato<br>Top grazie»</p><p class="recensione__chi"><b>Clara Buccinotti</b> <span data-i18n="d.g1a">Google, un anno fa</span></p></li>
     </ul>
     <p class="dicono__nota"><span data-i18n="d.nota">Dalle recensioni su Google, come sono state scritte. Anche la frase in alto viene da una recensione su Google.</span> <a href="https://www.google.com/maps/search/?api=1&amp;query=L%27Antico+Forno%2C+Via+Ettore+Ponti+33%2C+Milano" target="_blank" rel="noopener" data-i18n="d.tutte">Tutte le recensioni su Google</a></p>
   </section>
@@ -372,7 +412,7 @@ try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){r.classList.add(
     <p class="cementine__nota" data-i18n="o.nota">Orari dalla loro scheda Google (settembre 2026). Per agosto e i giorni di festa conviene telefonare.</p>
     <div class="dove">
       <div class="cartina reveal">
-        <iframe title="Mappa: L'Antico Forno, Via Ettore Ponti 33, Milano" data-i18n-title="o.mappa" src="https://maps.google.com/maps?q=L%27Antico%20Forno%2C%20Via%20Ettore%20Ponti%2033%2C%20Milano&amp;z=16&amp;output=embed" width="600" height="400" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="mappa-clic" data-mappa-clic style="--mappa-h: 400px"><template><iframe title="Mappa: L'Antico Forno, Via Ettore Ponti 33, Milano" data-i18n-title="o.mappa" src="https://maps.google.com/maps?q=L%27Antico%20Forno%2C%20Via%20Ettore%20Ponti%2033%2C%20Milano&amp;z=16&amp;output=embed" width="600" height="400" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></template><div class="mappa-clic__velo"><a class="mappa-clic__btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=L%27Antico+Forno%2C+Via+Ettore+Ponti+33%2C+Milano" target="_blank" rel="noopener">Mostra la mappa</a><p class="mappa-clic__nota">La mappa è di Google: aprendola, Google riceve il tuo indirizzo IP e può usare i suoi cookie.</p></div></div>
       </div>
       <div class="dove__testo">
         <dl class="indirizzo">
@@ -407,7 +447,7 @@ try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){r.classList.add(
     <p class="logo-piede" aria-hidden="true"><span>L'Antico Forno</span> <span>Caffè</span> <span>Pane &amp; Dolci</span></p>
     <p class="piede__dove">Via Ettore Ponti 33, 20143 Milano · <a href="tel:+393343257418" class="intero">334 325 7418</a></p>
     <p class="piede__orario" data-i18n="f2.orario">Dal lunedì al venerdì 7–19:30 · sabato 6–14 · domenica chiuso</p>
-    <p class="piede__cred" data-i18n="f2.cred">Sito dimostrativo realizzato da <a href="https://bespokestud.io" rel="noopener">Bespoke Studio</a> · le foto sono di clienti, dalla loro scheda Google; orari, lavagne e recensioni da Google (settembre 2026). La scala con le lampadine l&#39;abbiamo disegnata noi.</p>
+    <p class="piede__cred" data-i18n="f2.cred">Sito dimostrativo realizzato da <a href="https://bespokestud.io" rel="noopener">Bespoke Studio</a> · <a href="privacy.html">Privacy</a> · le foto sono di clienti, dalla loro scheda Google; orari, lavagne e recensioni da Google (settembre 2026). La scala con le lampadine l&#39;abbiamo disegnata noi.</p>
     <p><a class="piede__su" href="#inizio" data-i18n="f2.su">Torna su ↑</a></p>
   </div>
 </footer>
@@ -422,5 +462,6 @@ try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){r.classList.add(
   <img id="lightboxImg" src="" alt="">
 </div>
 
+<script src="js/mappa-clic.js?v=1" defer></script>
 </body>
 </html>
